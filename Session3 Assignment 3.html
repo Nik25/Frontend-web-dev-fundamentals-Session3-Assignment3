@@ -1,0 +1,86 @@
+<!--Assignment – Design a HTML form and apply style.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form with CSS</title>
+	<style type="text/css">
+		
+		div.main{
+			background-color: #42719e;
+			
+			width: 500px;
+			height: 920px;
+			margin:auto;
+		}
+		
+		div.inner{
+			background-color: #9ab0cb;
+			height: 30px;
+			width: 400px;
+			
+		    border-radius: 10px;
+    		padding: 20px; 
+    		margin: auto;
+    		margin-top:5px;
+		}
+		input[type="text"]{
+			height: 20px ; 
+			 width: 200px; 
+			 margin-left: 75px;
+			 color: #777b7d;
+		}
+		textarea{
+			margin-left: 75px;
+		}
+		button{
+			margin-left: 200px;
+			margin-top: 10px;
+			height: 50px;
+			width: 100px;
+			border-radius: 25px;
+			background-color: #041533;
+			color: white;
+		}
+		
+		.group{
+			margin-left: 25px;
+			color: white;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+<div class="main" id="">
+	<form>
+			<div class="group">
+			Step1: Your Details <br> </div>
+			<div class="inner">
+			 Name &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="Firstname" value="First and Last name"><br>
+			</div>	
+			
+			<div class="inner">
+			Email &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="emailAddress" value="exampl@domain.com"><br></div>
+			<div class="inner" >Phone &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" value="e.g. +44750000000000"><br></div>
+			<div class="group">
+			
+			Step1: Delivery Address<br> </div>
+			<div class="inner" style="height:40px;" >Address:&nbsp;&nbsp;&nbsp;&nbsp; <textarea></textarea><br></div>
+			<div class="inner"  >Post Code <input type="text" name="pincode"><br></div>
+			<div class="inner" >Country&nbsp;&nbsp; <input type="text" name="country"><br></div>
+			<div class="group">
+			
+			Step1:Card Details<br></div>
+			<div class="inner" >Card Type<br>
+			<input type="radio" name="card"> &nbsp;&nbsp;<img src="http://www.pngall.com/wp-content/uploads/2016/07/Mastercard-High-Quality-PNG.png" height="12px"> VISA 
+			<input type="radio" name="card">&nbsp;&nbsp; <img src="https://network.americanexpress.com/ph/en/homepage/images/AMEX_IDC_Green.png" height="12px"> AmEx
+			<input type="radio" name="Mastercard"> &nbsp;&nbsp;<img src="http://www.pngall.com/wp-content/uploads/2016/07/Mastercard-Download-PNG.png" height="12px">MasterCard</div>
+			<div class="inner" >Card Number <input type="text" name="cardnumber"></div>
+			<div class="inner" >Security Code <input type="text" name="security"></div>
+			<div class="inner" >Name on Card <input type="text" name="card" value="exact name as on the card"> </div>
+			
+			<button>BUY IT!</button><br> 
+	</form>
+</div>
+</body>
+</html>
